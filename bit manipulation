@@ -1,0 +1,23 @@
+t=int(input())
+for i in range(t):
+    n=int(input())
+    s=input()
+    ones,zeros=0,0
+    for i in range(n):
+        if s[i]=="1":
+            ones=i
+            break
+    for i in range(ones,n):
+        if s[i]=="0":
+            zeros=i
+            break
+    if zeros==0:
+        print(n)
+    else:
+        print(zeros-ones)
+    
+    
+    
+    
+    
+    
